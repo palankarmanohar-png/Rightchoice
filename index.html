@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18174205791"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18174205791');
+</script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TD8WRXX4');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Co-Branded Cards Showdown</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brandBlue: '#2874f0',
+                        brandYellow: '#ffe500',
+                        sbiBlue: '#00a4e4',
+                        axisBurgundy: '#861f41',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(241, 243, 246, 1);
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: rgba(30, 41, 59, 1);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 9999px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
+
+        /* 3D Card Flip effect */
+        .card-perspective {
+            perspective: 1000px;
+        }
+        .card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .card-perspective:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .card-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 min-h-screen font-sans transition-colors duration-300">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD8WRXX4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Navigation & Header Banner -->
+    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-brandBlue text-white p-2 rounded-lg flex items-center justify-center font-black tracking-wider text-xl">
+                        FK
+                    </div>
+                    <span class="font-bold text-lg tracking-tight hidden sm:block">Co-Branded Card Duel</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#calculator" class="text-sm font-medium hover:text-brandBlue transition">Savings Calculator</a>
+                    <a href="#comparison" class="text-sm font-medium hover:text-brandBlue transition">Spec Matrix</a>
+                    <a href="#quiz" class="text-sm font-medium hover:text-brandBlue transition">Match Quiz</a>
+                    <button id="themeToggle" class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:scale-105 active:scale-95 transition-all">
+                        <i id="themeIcon" class="fas fa-moon text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="relative overflow-hidden py-12 md:py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-brandBlue text-white">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(0,164,228,0.2),transparent_40%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(134,31,65,0.25),transparent_40%)]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brandBlue/30 text-sky-300 border border-sky-500/30 mb-4 tracking-wide uppercase">
+                2026 Devaluation Updates Included
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+                The Ultimate <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-yellow-300 to-rose-400">Flipkart Card</span> Showdown
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8 font-light">
+                Analyze and contrast the <span class="font-semibold text-white">Flipkart SBI Credit Card</span> and the revamped <span class="font-semibold text-white">Flipkart Axis Bank Credit Card</span> side-by-side. Discover your ideal match instantly.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#calculator" class="px-6 py-3 bg-brandBlue text-white font-semibold rounded-xl hover:bg-blue-600 shadow-lg shadow-blue-500/20 active:scale-95 transition-all">
+                    Calculate My Cashback
+                </a>
+                <a href="#comparison" class="px-6 py-3 bg-white/10 text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 hover:border-white/30 active:scale-95 transition-all">
+                    View Detailed Specs
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- SECTION 1: INTERACTIVE 3D CREDIT CARDS -->
+        <section class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">Explore the Competitors</h2>
+            <p class="text-center text-slate-500 dark:text-slate-400 mb-10">Hover on desktop or tap on mobile to flip the cards and see key highlights</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- SBI Card -->
+                <div class="flex flex-col items-center">
+                    <div class="card-perspective w-full max-w-[340px] h-[215px] cursor-pointer">
+                        <div class="card-inner w-full h-full relative duration-700 shadow-2xl rounded-2xl">
+                            <!-- Front of SBI Card -->
+                            <div class="card-front bg-gradient-to-br from-sky-700 via-sky-900 to-cyan-900 rounded-2xl p-5 text-white flex flex-col justify-between border border-sky-400/20">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <p class="text-[10px] uppercase tracking-widest text-sky-300 font-bold">Flipkart SBI</p>
+                                        <p class="text-xs text-slate-300">Credit Card</p>
+                                    </div>
+                                    <div class="text-lg font-black tracking-wider text-sky-400">SBI Card</div>
+                                </div>
+                                <div class="my-auto flex flex-col justify-center">
+                                    <div class="text-2xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-white to-sky-200">Flipkart</div>
+                                    <div class="flex items-center space-x-1 mt-1">
+                                        <div class="w-7 h-5 bg-yellow-400/80 rounded-sm"></div>
+                                        <div class="w-5 h-5 bg-sky-200/20 rounded-full flex items-center justify-center"><i class="fas fa-wifi text-[8px] text-white/70"></i></div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-end">
+                                    <div>
+                                        <p class="text-[8px] text-sky-200 uppercase tracking-wider">Premium Cashback Card</p>
+                                        <p class="text-[10px] tracking-widest font-mono">XXXX XXXX XXXX 4902</p>
+                                    </div>
+                                    <div class="text-xs italic font-bold text-sky-300">VISA</div>
+                                </div>
+                            </div>
+                            <!-- Back of SBI Card -->
+                            <div class="card-back bg-slate-800 rounded-2xl p-5 text-white flex flex-col justify-between border border-sky-400/20">
+                                <div class="border-b border-slate-700 pb-2">
+                                    <p class="text-xs text-sky-300 font-bold"><i class="fas fa-gift mr-1"></i> Key Benefit Strengths</p>
+                                </div>
+                                <ul class="text-[11px] space-y-2 text-slate-300">
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> 7.5% Cashback on Myntra</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> 12% Off on Cleartrip Bookings</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-sky-400 mr-2"></i> 4% Partner Cashback (Zomato/Netmeds)</li>
+                                </ul>
+                                <div class="text-[9px] text-slate-400 text-right">SBI Card Helpline Ecosystem</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-sky-100 dark:bg-sky-950/50 text-sky-700 dark:text-sky-300 border border-sky-200 dark:border-sky-900">
+                            Best for Zomato & Myntra Lovers
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Axis Card -->
+                <div class="flex flex-col items-center">
+                    <div class="card-perspective w-full max-w-[340px] h-[215px] cursor-pointer">
+                        <div class="card-inner w-full h-full relative duration-700 shadow-2xl rounded-2xl">
+                            <!-- Front of Axis Card -->
+                            <div class="card-front bg-gradient-to-br from-rose-950 via-rose-900 to-amber-950 rounded-2xl p-5 text-white flex flex-col justify-between border border-rose-400/20">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <p class="text-[10px] uppercase tracking-widest text-amber-300 font-bold">Flipkart Axis</p>
+                                        <p class="text-xs text-slate-300">Credit Card</p>
+                                    </div>
+                                    <div class="text-lg font-black tracking-wider text-rose-300">AXIS BANK</div>
+                                </div>
+                                <div class="my-auto flex flex-col justify-center">
+                                    <div class="text-2xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-white to-amber-200">Flipkart</div>
+                                    <div class="flex items-center space-x-1 mt-1">
+                                        <div class="w-7 h-5 bg-amber-500/80 rounded-sm"></div>
+                                        <div class="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-wifi text-[8px] text-white/70"></i></div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-end">
+                                    <div>
+                                        <p class="text-[8px] text-amber-200 uppercase tracking-wider">Uncapped 4% Partners</p>
+                                        <p class="text-[10px] tracking-widest font-mono">XXXX XXXX XXXX 8301</p>
+                                    </div>
+                                    <div class="text-xs italic font-bold text-amber-300">VISA SIGNATURE</div>
+                                </div>
+                            </div>
+                            <!-- Back of Axis Card -->
+                            <div class="card-back bg-slate-800 rounded-2xl p-5 text-white flex flex-col justify-between border border-rose-400/20">
+                                <div class="border-b border-slate-700 pb-2">
+                                    <p class="text-xs text-amber-300 font-bold"><i class="fas fa-gift mr-1"></i> Key Benefit Strengths</p>
+                                </div>
+                                <ul class="text-[11px] space-y-2 text-slate-300">
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-amber-400 mr-2"></i> 5% Cashback on Flipkart (Up to ₹4K/qtr)</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-amber-400 mr-2"></i> 4% Unlimited on Partner Elite (Swiggy/Uber)</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-amber-400 mr-2"></i> Premium dining benefits via EazyDiner</li>
+                                </ul>
+                                <div class="text-[9px] text-slate-400 text-right">Axis Bank Direct Support</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-rose-100 dark:bg-rose-950/50 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-900">
+                            Best for Swiggy & Uber Frequenters
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: INTERACTIVE SAVINGS CALCULATOR -->
+        <section id="calculator" class="mb-16 scroll-mt-20">
+            <div class="bg-white dark:bg-slate-800 rounded-3xl p-6 md:p-10 shadow-xl border border-slate-100 dark:border-slate-700">
+                <div class="max-w-3xl mx-auto text-center mb-8">
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900 dark:text-white">Interactive Savings Calculator</h2>
+                    <p class="text-sm md:text-base text-slate-500 dark:text-slate-400 mt-2">Adjust your estimated monthly spending in each category below to visualize your personalized net annual cashback return under 2026 rules (inclusive of devaluations/caps).</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <!-- Spends Controls -->
+                    <div class="lg:col-span-7 space-y-6 bg-slate-50 dark:bg-slate-900/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <h3 class="font-bold text-lg border-b border-slate-200 dark:border-slate-800 pb-2"><i class="fas fa-sliders-h mr-2 text-brandBlue"></i> Customize Spendings</h3>
+                        
+                        <!-- Spend Slider 1 -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span class="font-medium text-slate-700 dark:text-slate-300">Flipkart spends (Monthly)</span>
+                                <span id="flipkartVal" class="font-bold text-brandBlue">₹5,000</span>
+                            </div>
+                            <input type="range" id="spendFlipkart" min="0" max="100000" step="1000" value="5000" class="w-full accent-brandBlue bg-slate-200 dark:bg-slate-800 h-2 rounded-lg appearance-none cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-slate-400">
+                                <span>₹0</span>
+                                <span>₹50K</span>
+                                <span>₹100K</span>
+                            </div>
+                        </div>
+
+                        <!-- Spend Slider 2 -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span class="font-medium text-slate-700 dark:text-slate-300">Myntra Spends (Monthly)</span>
+                                <span id="myntraVal" class="font-bold text-brandBlue">₹2,000</span>
+                            </div>
+                            <input type="range" id="spendMyntra" min="0" max="50000" step="1000" value="2000" class="w-full accent-brandBlue bg-slate-200 dark:bg-slate-800 h-2 rounded-lg appearance-none cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-slate-400">
+                                <span>₹0</span>
+                                <span>₹25K</span>
+                                <span>₹50K</span>
+                            </div>
+                        </div>
+
+                        <!-- Spend Slider 3 -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span class="font-medium text-slate-700 dark:text-slate-300">Cleartrip Spends (Monthly)</span>
+                                <span id="cleartripVal" class="font-bold text-brandBlue">₹1,000</span>
+                            </div>
+                            <input type="range" id="spendCleartrip" min="0" max="50000" step="1000" value="1000" class="w-full accent-brandBlue bg-slate-200 dark:bg-slate-800 h-2 rounded-lg appearance-none cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-slate-400">
+                                <span>₹0</span>
+                                <span>₹25K</span>
+                                <span>₹50K</span>
+                            </div>
+                        </div>
+
+                        <!-- Spend Slider 4 -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span class="font-medium text-slate-700 dark:text-slate-300">Swiggy & Zomato Delivery spends (Monthly)</span>
+                                <span id="partnerVal" class="font-bold text-brandBlue">₹3,000</span>
+                            </div>
+                            <input type="range" id="spendPartners" min="0" max="30000" step="500" value="3000" class="w-full accent-brandBlue bg-slate-200 dark:bg-slate-800 h-2 rounded-lg appearance-none cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-slate-400">
+                                <span>Note: Zomato points directly to SBI card; Swiggy applies to Axis</span>
+                            </div>
+                        </div>
+
+                        <!-- Spend Slider 5 -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span class="font-medium text-slate-700 dark:text-slate-300">All Other General Spends (Monthly)</span>
+                                <span id="otherVal" class="font-bold text-brandBlue">₹10,000</span>
+                            </div>
+                            <input type="range" id="spendOthers" min="0" max="150000" step="2000" value="10000" class="w-full accent-brandBlue bg-slate-200 dark:bg-slate-800 h-2 rounded-lg appearance-none cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-slate-400">
+                                <span>₹0</span>
+                                <span>₹75K</span>
+                                <span>₹150K</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Results Comparison -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 p-6 rounded-2xl text-white shadow-xl relative overflow-hidden border border-slate-700/50">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/10 blur-3xl pointer-events-none"></div>
+                            
+                            <h3 class="font-bold text-lg mb-6 flex items-center justify-between">
+                                <span>Annual Earnings Forecast</span>
+                                <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full">Automated</span>
+                            </h3>
+
+                            <div class="grid grid-cols-2 gap-4 pb-6 border-b border-slate-700/60">
+                                <!-- SBI Card Result -->
+                                <div class="text-center bg-slate-800/40 p-3 rounded-xl border border-sky-400/20">
+                                    <p class="text-xs text-sky-400 font-bold">Flipkart SBI Card</p>
+                                    <p class="text-2xl font-black mt-1" id="sbiNetOutput">₹0</p>
+                                    <p class="text-[10px] text-slate-400 mt-1">Annual Net Value</p>
+                                </div>
+                                <!-- Axis Card Result -->
+                                <div class="text-center bg-slate-800/40 p-3 rounded-xl border border-rose-400/20">
+                                    <p class="text-xs text-rose-400 font-bold">Flipkart Axis Card</p>
+                                    <p class="text-2xl font-black mt-1" id="axisNetOutput">₹0</p>
+                                    <p class="text-[10px] text-slate-400 mt-1">Annual Net Value</p>
+                                </div>
+                            </div>
+
+                            <div class="pt-6 space-y-4">
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-slate-400">Total Combined Annual Spending:</span>
+                                    <span class="font-bold text-slate-200" id="totalSpendsOutput">₹0</span>
+                                </div>
+                                <!-- Progress representation -->
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-xs font-semibold text-sky-300">
+                                        <span>SBI Cashback Progress</span>
+                                        <span id="sbiGrossOutput">₹0</span>
+                                    </div>
+                                    <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden">
+                                        <div id="sbiProgressBar" class="bg-sky-500 h-full rounded-full transition-all duration-300" style="width: 0%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-xs font-semibold text-rose-300">
+                                        <span>Axis Cashback Progress</span>
+                                        <span id="axisGrossOutput">₹0</span>
+                                    </div>
+                                    <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden">
+                                        <div id="axisProgressBar" class="bg-rose-500 h-full rounded-full transition-all duration-300" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Verdict Dynamic Note -->
+                            <div class="mt-6 p-4 rounded-xl bg-slate-800/80 border border-slate-700 text-xs flex items-start space-x-3">
+                                <div class="text-lg text-yellow-400 pt-0.5"><i class="fas fa-lightbulb"></i></div>
+                                <div>
+                                    <span class="font-bold text-white">Dynamic Advisory:</span>
+                                    <p id="calculatorAdvise" class="text-slate-300 mt-0.5">Adjusting calculations...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Fee Status Tags -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-xl border border-slate-200/60 dark:border-slate-800 text-center">
+                                <p class="text-[10px] uppercase font-bold text-slate-400">SBI Card Fee Status</p>
+                                <p id="sbiFeeStatus" class="text-xs font-bold mt-1 text-slate-700 dark:text-slate-300">₹500 Charged</p>
+                            </div>
+                            <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-xl border border-slate-200/60 dark:border-slate-800 text-center">
+                                <p class="text-[10px] uppercase font-bold text-slate-400">Axis Card Fee Status</p>
+                                <p id="axisFeeStatus" class="text-xs font-bold mt-1 text-slate-700 dark:text-slate-300">₹500 Charged</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: SPECIFICATIONS COMPARISON MATRIX -->
+        <section id="comparison" class="mb-16 scroll-mt-20">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white">Comparative Specification Grid</h2>
+                    <p class="text-slate-500 dark:text-slate-400 mt-1">Sortable database breakdown mapping exact product capabilities.</p>
+                </div>
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="filterTable('all')" class="table-tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-brandBlue text-white border border-brandBlue/20 transition-all">All Specs</button>
+                    <button onclick="filterTable('fees')" class="table-tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-200/50 dark:border-slate-700/50 transition-all">Fees & Charges</button>
+                    <button onclick="filterTable('rewards')" class="table-tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-200/50 dark:border-slate-700/50 transition-all">Rewards & Cashback</button>
+                    <button onclick="filterTable('privileges')" class="table-tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-200/50 dark:border-slate-700/50 transition-all">Privileges & Exclusions</button>
+                </div>
+            </div>
+
+            <!-- Table Block -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700/70">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 dark:bg-slate-900 border-b border-slate-100 dark:border-slate-850">
+                                <th class="p-4 md:p-5 font-bold text-xs uppercase tracking-wider text-slate-400 w-1/4">Capability Area</th>
+                                <th class="p-4 md:p-5 font-bold text-xs uppercase tracking-wider text-sky-500 w-3/8"><i class="fas fa-university mr-2"></i> Flipkart SBI Credit Card</th>
+                                <th class="p-4 md:p-5 font-bold text-xs uppercase tracking-wider text-rose-500 w-3/8"><i class="fas fa-university mr-2"></i> Flipkart Axis Bank Credit Card</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-700">
+                            <!-- Fee Segment -->
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="fees">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">Joining Fee</td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-semibold text-slate-900 dark:text-white">₹500 + GST</div>
+                                    <span class="text-xs text-slate-400">Regular join fee charged in 1st cycle statement. No renewal waivers during first year.</span>
+                                </td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-semibold text-slate-900 dark:text-white">₹500 + GST</div>
+                                    <span class="text-xs text-slate-400">Welcome benefits revised to limit impact (vouchers issued post fee-realization).</span>
+                                </td>
+                            </tr>
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="fees">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">Annual Renewal Fee</td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-semibold text-slate-900 dark:text-white">₹500 + GST</div>
+                                    <span class="text-xs text-slate-400">Applicable starting year 2. Reversed dynamically upon hit limit threshold.</span>
+                                </td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-semibold text-slate-900 dark:text-white">₹500 + GST</div>
+                                    <span class="text-xs text-slate-400">Standard card renewal fee. Substituted during high spend benchmarks.</span>
+                                </td>
+                            </tr>
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="fees">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">Reversal Limit (Fee Waiver)</td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-semibold text-slate-700 dark:text-slate-200">Spends &ge; <span class="text-sky-500 font-bold">₹3,50,000</span> / year</div>
+                                    <p class="text-xs text-slate-400 mt-1">Calculated cumulatively across standard transaction types.</p>
+                                </td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-semibold text-slate-700 dark:text-slate-200">Spends &ge; <span class="text-rose-500 font-bold">₹3,50,000</span> / year</div>
+                                    <p class="text-xs text-rose-500 mt-1 font-medium"><i class="fas fa-exclamation-triangle mr-1"></i> Rent Payments & Wallet Loads excluded</p>
+                                </td>
+                            </tr>
+
+                            <!-- Reward Segment -->
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="rewards">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">Flipkart Native Cashback</td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-bold text-emerald-500 text-base">5% Cashback</div>
+                                    <div class="text-xs text-slate-400 mt-1">Direct card rewards capped aggregate.</div>
+                                </td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-bold text-emerald-500 text-base">5% Cashback</div>
+                                    <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300 mt-1"><i class="fas fa-lock mr-1"></i> Capped at ₹4,000 per Statement Qtr</span>
+                                </td>
+                            </tr>
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="rewards">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">Myntra Cashback Tier</td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-bold text-emerald-500 text-base">7.5% Cashback</div>
+                                    <span class="text-xs text-slate-400">Direct integration for lifestyle fashion shopping.</span>
+                                </td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-bold text-emerald-500 text-base">7.5% Cashback</div>
+                                    <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300 mt-1"><i class="fas fa-lock mr-1"></i> Capped at ₹4,000 per Statement Qtr</span>
+                                </td>
+                            </tr>
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="rewards">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">Cleartrip Bookings</td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-bold text-slate-800 dark:text-white">12% Off / Base Rewards</div>
+                                    <span class="text-xs text-slate-400">Dynamic system discount alignment interface.</span>
+                                </td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-bold text-emerald-500">5% Cashback</div>
+                                    <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300 mt-1"><i class="fas fa-lock mr-1"></i> Capped at ₹4,000 per Statement Qtr</span>
+                                </td>
+                            </tr>
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="rewards">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">Preferred Partner Outlets (4% Cash)</td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="flex flex-wrap gap-1.5 mt-1">
+                                        <span class="px-2 py-0.5 rounded bg-sky-50 dark:bg-sky-950 text-sky-600 dark:text-sky-300 text-xs font-semibold">Zomato</span>
+                                        <span class="px-2 py-0.5 rounded bg-sky-50 dark:bg-sky-950 text-sky-600 dark:text-sky-300 text-xs font-semibold">Uber</span>
+                                        <span class="px-2 py-0.5 rounded bg-sky-50 dark:bg-sky-950 text-sky-600 dark:text-sky-300 text-xs font-semibold">Netmeds</span>
+                                        <span class="px-2 py-0.5 rounded bg-sky-50 dark:bg-sky-950 text-sky-600 dark:text-sky-300 text-xs font-semibold">PVR</span>
+                                    </div>
+                                    <span class="text-[10px] text-slate-400 mt-1 block">Ideal for health & online pharmacy orders.</span>
+                                </td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="flex flex-wrap gap-1.5 mt-1">
+                                        <span class="px-2 py-0.5 rounded bg-rose-50 dark:bg-rose-950 text-rose-600 dark:text-rose-300 text-xs font-semibold">Swiggy</span>
+                                        <span class="px-2 py-0.5 rounded bg-rose-50 dark:bg-rose-950 text-rose-600 dark:text-rose-300 text-xs font-semibold">Uber</span>
+                                        <span class="px-2 py-0.5 rounded bg-rose-50 dark:bg-rose-950 text-rose-600 dark:text-rose-300 text-xs font-semibold">PVR</span>
+                                        <span class="px-2 py-0.5 rounded bg-rose-50 dark:bg-rose-950 text-rose-600 dark:text-rose-300 text-xs font-semibold">Cult.fit</span>
+                                    </div>
+                                    <span class="text-[10px] text-slate-400 mt-1 block font-semibold text-emerald-600 dark:text-emerald-400"><i class="fas fa-infinity"></i> Unlimited Reward Accrual (No Cap)</span>
+                                </td>
+                            </tr>
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="rewards">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">All Other Eligible Spends</td>
+                                <td class="p-4 md:p-5 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                                    1.0% Cashback <span class="text-xs font-normal text-slate-400">(Unlimited)</span>
+                                </td>
+                                <td class="p-4 md:p-5 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                                    1.0% Cashback <span class="text-xs font-normal text-slate-400">(Unlimited, down from 1.5% in devaluation)</span>
+                                </td>
+                            </tr>
+
+                            <!-- Privilege Segment -->
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="privileges">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">Domestic Airport Lounge Access</td>
+                                <td class="p-4 md:p-5 text-sm text-rose-500 font-medium">
+                                    <i class="fas fa-times-circle mr-1"></i> None (Not available on this co-brand variant)
+                                </td>
+                                <td class="p-4 md:p-5 text-sm text-rose-500 font-medium">
+                                    <i class="fas fa-times-circle mr-1"></i> Completely Discontinued <span class="text-xs text-slate-400 block font-normal">(4 visits/yr program deleted as of June 2025 structural updates)</span>
+                                </td>
+                            </tr>
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="privileges">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">Reward Exclusions</td>
+                                <td class="p-4 md:p-5 text-sm text-slate-400">
+                                    Fuel, Rent Payments, Wallet Load, Purchase of Gift Cards, Cash Advance.
+                                </td>
+                                <td class="p-4 md:p-5 text-sm text-slate-400">
+                                    <span class="font-bold text-slate-300">Enhanced:</span> Utilities & Telecom, Rent, Insurance, Government Services, Educational Fees, Wallet Load, Fuel, Jewellery.
+                                </td>
+                            </tr>
+                            <tr class="table-row hover:bg-slate-50/50 dark:hover:bg-slate-900/10 transition-colors" data-category="privileges">
+                                <td class="p-4 md:p-5 font-bold text-sm text-slate-800 dark:text-slate-200">Dining Benefits</td>
+                                <td class="p-4 md:p-5 text-sm text-slate-400">
+                                    Standard SBI Card platform dining partner discounts.
+                                </td>
+                                <td class="p-4 md:p-5 text-sm">
+                                    <div class="font-semibold text-slate-800 dark:text-white">Dining Delights with EazyDiner</div>
+                                    <span class="text-xs text-slate-400">Up to 15% discount at selected properties on minimum order of ₹2,500.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: SMART RECOMMENDATION WIZARD -->
+        <section id="quiz" class="mb-16 scroll-mt-20">
+            <div class="bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 text-white rounded-3xl p-6 md:p-10 shadow-xl relative overflow-hidden">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.05),transparent_50%)]"></div>
+                
+                <div class="relative z-10 max-w-2xl mx-auto text-center">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-2">Dynamic Recommendation Wizard</h2>
+                    <p class="text-xs md:text-sm text-slate-300 mb-8">Answer 3 questions to identify which Flipkart co-branded card aligns with your daily habits.</p>
+                    
+                    <div id="quizContainer" class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/15 text-left transition-all">
+                        <!-- Question Step -->
+                        <div id="quizStep" class="space-y-4">
+                            <!-- JS injects here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare & Apply: Flipkart Co-Branded Credit Cards</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons for clean UI assets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brandSbi: {
+              light: '#3abff8',
+              DEFAULT: '#00a4e4',
+              dark: '#00709e',
+            },
+            brandAxis: {
+              light: '#d53f8c',
+              DEFAULT: '#ae275f',
+              dark: '#741a3f',
+            },
+            fkBlue: '#2874f0',
+            fkYellow: '#ffe500'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #f8fafc;
+      font-family: 'Inter', sans-serif;
+    }
+    .card-glow-sbi:hover {
+      box-shadow: 0 20px 40px -15px rgba(0, 164, 228, 0.35);
+    }
+    .card-glow-axis:hover {
+      box-shadow: 0 20px 40px -15px rgba(174, 39, 95, 0.35);
+    }
+    .card-hover-effect {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover-effect:hover {
+      transform: translateY(-6px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8 bg-gradient-to-tr from-slate-50 via-gray-100 to-indigo-50">
+
+  <div class="max-w-5xl w-full mx-auto">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- 1. FLIPKART SBI CREDIT CARD (LEFT) -->
+      <div class="card-hover-effect bg-dark rounded-3xl border border-slate-100 shadow-xl overflow-hidden card-glow-sbi flex flex-col justify-between">
+        
+        <!-- SBI Brand Ribbon -->
+        <div class="bg-gradient-to-r from-brandSbi-dark to-brandSbi py-4 px-6 text-white flex justify-between items-center">
+          <span class="font-bold text-xs tracking-widest uppercase">State Bank of India</span>
+          <span class="bg-white/20 text-[10px] px-2.5 py-1 rounded-full font-semibold">Fast Approval</span>
+        </div>
+
+        <div class="p-6 md:p-8 flex-grow">
+          <!-- Realistic SBI Credit Card Representation -->
+          <div class="relative w-full aspect-[1.58/1] max-w-[320px] mx-auto mb-8 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-indigo-950 via-slate-900 to-brandSbi-dark text-white p-6 flex flex-col justify-between transform hover:rotate-1 transition-transform duration-300">
+            <div class="flex justify-between items-start">
+              <div class="flex flex-col gap-0.5">
+                <span class="text-[8px] uppercase tracking-wider opacity-60">Flipkart co-brand</span>
+                <span class="font-extrabold text-lg text-fkYellow">SBI Card</span>
+              </div>
+              <svg class="h-7 w-7 text-amber-400" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="3" y="6" width="7" height="6" rx="1"/>
+                <rect x="3" y="13" width="7" height="5" rx="1"/>
+                <rect x="11" y="6" width="5" height="12" rx="1"/>
+                <rect x="17" y="6" width="4" height="12" rx="1"/>
+              </svg>
+            </div>
+
+            <div class="my-auto flex items-center justify-between">
+              <span class="font-mono text-sm md:text-base tracking-widest">••••  ••••  ••••  4820</span>
+              <i class="fa-solid fa-wifi rotate-90 text-xs opacity-70"></i>
+            </div>
+
+            <div class="flex justify-between items-end">
+              <div>
+                <span class="block text-[7px] uppercase tracking-widest opacity-50">Cardholder</span>
+                <span class="text-[10px] uppercase tracking-wider font-semibold">VALUED CUSTOMER</span>
+              </div>
+              <div class="text-right">
+                <span class="block text-xs font-extrabold italic text-fkYellow">flipkart</span>
+              </div>
+            </div>
+          </div>
+
+       
+        </div>
+
+        <!-- Apply CTA Button (SBI) -->
+        <div class="p-6 md:p-8 bg-slate-50 border-t border-slate-100">
+          <button onclick="triggerApplication('SBI')" class="w-full bg-brandSbi hover:bg-brandSbi-dark text-white font-bold py-4 px-6 rounded-2xl shadow-lg shadow-brandSbi/20 hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 transform active:scale-95">
+            <a href="https://linkredirect.in/visitproduct/2922/PPS386-SBI-catcard-106?id=5292767&shareid=WTVTyGP" target="_blank" class="btn-apply btn-sbi btn-small" style="text-align: center;">Apply via SBI Official Portal</a>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. FLIPKART AXIS BANK CREDIT CARD (RIGHT) -->
+      <div class="card-hover-effect bg-dark rounded-3xl border border-slate-100 shadow-xl overflow-hidden card-glow-axis flex flex-col justify-between">
+        
+        <!-- Axis Brand Ribbon -->
+        <div class="bg-gradient-to-r from-brandAxis-dark to-brandAxis py-4 px-6 text-white flex justify-between items-center">
+          <span class="font-bold text-xs tracking-widest uppercase">Axis Bank</span>
+          <span class="bg-white/20 text-[10px] px-2.5 py-1 rounded-full font-semibold">Most Popular</span>
+        </div>
+
+        <div class="p-6 md:p-8 flex-grow">
+          <!-- Realistic Axis Credit Card Representation -->
+          <div class="relative w-full aspect-[1.58/1] max-w-[320px] mx-auto mb-8 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-brandAxis-dark via-slate-900 to-brandAxis-light text-white p-6 flex flex-col justify-between transform hover:-rotate-1 transition-transform duration-300">
+            <div class="flex justify-between items-start">
+              <div class="flex flex-col gap-0.5">
+                <span class="text-[8px] uppercase tracking-wider opacity-60">Flipkart co-brand</span>
+                <span class="font-extrabold text-lg text-white">AXIS BANK</span>
+              </div>
+              <svg class="h-7 w-7 text-slate-300" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="3" y="6" width="7" height="6" rx="1"/>
+                <rect x="3" y="13" width="7" height="5" rx="1"/>
+                <rect x="11" y="6" width="5" height="12" rx="1"/>
+                <rect x="17" y="6" width="4" height="12" rx="1"/>
+              </svg>
+            </div>
+
+            <div class="my-auto flex items-center justify-between">
+              <span class="font-mono text-sm md:text-base tracking-widest">••••  ••••  ••••  9511</span>
+              <i class="fa-solid fa-wifi rotate-90 text-xs opacity-70"></i>
+            </div>
+
+            <div class="flex justify-between items-end">
+              <div>
+                <span class="block text-[7px] uppercase tracking-widest opacity-50">Cardholder</span>
+                <span class="text-[10px] uppercase tracking-wider font-semibold">VALUED CUSTOMER</span>
+              </div>
+              <div class="text-right">
+                <span class="block text-xs font-extrabold italic text-fkYellow">flipkart</span>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <!-- Apply CTA Button (Axis) -->
+        <div class="p-6 md:p-8 bg-slate-50 border-t border-slate-100">
+          <button onclick="triggerApplication('AXIS')" class="w-full bg-brandAxis hover:bg-brandAxis-dark text-white font-bold py-4 px-6 rounded-2xl shadow-lg shadow-brandAxis/20 hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 transform active:scale-95">
+            <a href="https://linkredirect.in/visitproduct/2901/PPS328-AxisFlipkart-catcard-101?id=5292767&shareid=vi3eA2V" target="_blank" class="btn-apply btn-axis btn-small" style="text-align: center;">Apply via Axis Official Portal</a>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Clean Interactive Toast Notification Feedback -->
+  <div id="toastMessage" class="fixed bottom-6 right-6 bg-slate-950 text-white px-5 py-3.5 rounded-2xl shadow-2xl z-50 flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none border border-slate-800">
+    <div id="toastIcon" class="text-sm bg-white/15 p-1.5 rounded-lg flex items-center justify-center"></div>
+    <span class="text-xs font-semibold" id="toastText">Setting up portal...</span>
+  </div>
+
+  <script>
+    // Handles mock application redirections beautifully without cluttering the page
+    function triggerApplication(cardType) {
+      const isSbi = cardType === 'SBI';
+      const brandColorClass = isSbi ? 'text-brandSbi' : 'text-brandAxis';
+      const message = `Connecting to ${isSbi ? 'State Bank of India' : 'Axis Bank'} eligibility terminal...`;
+      
+      showToast(message, isSbi ? 'sbi' : 'axis');
+    }
+
+    // Custom Dynamic Toast Notification Implementation
+    function showToast(message, theme) {
+      const toast = document.getElementById('toastMessage');
+      const icon = document.getElementById('toastIcon');
+      const text = document.getElementById('toastText');
+
+      text.textContent = message;
+      
+      if (theme === 'sbi') {
+        icon.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin text-brandSbi"></i>';
+      } else {
+        icon.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin text-brandAxis-light"></i>';
+      }
+
+      // Slide In / Fade In
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      // Dismiss Timer
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
+    <!-- Footer -->
+    <footer class="bg-slate-100 dark:bg-slate-950 text-slate-500 dark:text-slate-400 py-12 border-t border-slate-200 dark:border-slate-850">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <p class="text-sm font-medium text-slate-700 dark:text-slate-300">&copy; 2026 Flipkart Co-Branded Card Showdown Portal. Built for immersive side-by-side analysis.</p>
+            <p class="text-[11px] leading-relaxed max-w-2xl mx-auto">Disclaimer: The details, fees, devaluations, and cashback caps presented represent configurations and structural parameters active up to the year 2026. Banking programs and card terms are subject to change from Axis Bank and SBI Card. Make financial choices responsibly.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Switching Configuration
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        
+        // Initialize Theme Mode
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeIcon.className = 'fas fa-sun text-lg text-yellow-400';
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeIcon.className = 'fas fa-moon text-lg';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                themeIcon.className = 'fas fa-moon text-lg';
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                themeIcon.className = 'fas fa-sun text-lg text-yellow-400';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Interactive Table Filtering logic
+        function filterTable(category) {
+            const rows = document.querySelectorAll('.table-row');
+            const buttons = document.querySelectorAll('.table-tab-btn');
+            
+            // Adjust active state of tabs
+            buttons.forEach(btn => {
+                if (btn.getAttribute('onclick').includes(category)) {
+                    btn.classList.add('bg-brandBlue', 'text-white');
+                    btn.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300');
+                } else {
+                    btn.classList.remove('bg-brandBlue', 'text-white');
+                    btn.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300');
+                }
+            });
+
+            // Display target data
+            rows.forEach(row => {
+                if (category === 'all' || row.dataset.category === category) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        // Live Savings Calculator Logic
+        const sliders = {
+            flipkart: document.getElementById('spendFlipkart'),
+            myntra: document.getElementById('spendMyntra'),
+            cleartrip: document.getElementById('spendCleartrip'),
+            partners: document.getElementById('spendPartners'),
+            others: document.getElementById('spendOthers')
+        };
+
+        const displays = {
+            flipkart: document.getElementById('flipkartVal'),
+            myntra: document.getElementById('myntraVal'),
+            cleartrip: document.getElementById('cleartripVal'),
+            partners: document.getElementById('partnerVal'),
+            others: document.getElementById('otherVal'),
+            totalSpends: document.getElementById('totalSpendsOutput'),
+            sbiNet: document.getElementById('sbiNetOutput'),
+            axisNet: document.getElementById('axisNetOutput'),
+            sbiGross: document.getElementById('sbiGrossOutput'),
+            axisGross: document.getElementById('axisGrossOutput'),
+            sbiBar: document.getElementById('sbiProgressBar'),
+            axisBar: document.getElementById('axisProgressBar'),
+            sbiFee: document.getElementById('sbiFeeStatus'),
+            axisFee: document.getElementById('axisFeeStatus'),
+            advise: document.getElementById('calculatorAdvise')
+        };
+
+        function updateCalculations() {
+            // Get values
+            const flipkartMonthly = parseFloat(sliders.flipkart.value);
+            const myntraMonthly = parseFloat(sliders.myntra.value);
+            const cleartripMonthly = parseFloat(sliders.cleartrip.value);
+            const partnersMonthly = parseFloat(sliders.partners.value);
+            const othersMonthly = parseFloat(sliders.others.value);
+
+            // Update range indicators
+            displays.flipkart.innerText = `₹${flipkartMonthly.toLocaleString('en-IN')}`;
+            displays.myntra.innerText = `₹${myntraMonthly.toLocaleString('en-IN')}`;
+            displays.cleartrip.innerText = `₹${cleartripMonthly.toLocaleString('en-IN')}`;
+            displays.partners.innerText = `₹${partnersMonthly.toLocaleString('en-IN')}`;
+            displays.others.innerText = `₹${othersMonthly.toLocaleString('en-IN')}`;
+
+            // Calculate annual spends
+            const totalMonthly = flipkartMonthly + myntraMonthly + cleartripMonthly + partnersMonthly + othersMonthly;
+            const totalAnnualSpends = totalMonthly * 12;
+            displays.totalSpends.innerText = `₹${totalAnnualSpends.toLocaleString('en-IN')}/year`;
+
+            // CARD SBI CALCULATION
+            // Cap: SBI preferred partners capped at ₹4,000/quarter per category = ₹16,000 annually
+            // (1 quarter is 3 months, so ₹1,333 limit per month per category)
+            const sbiFlipkartMonthlyCashback = flipkartMonthly * 0.05; 
+            const sbiMyntraMonthlyCashback = myntraMonthly * 0.075;
+            
+            // SBI Cleartrip gives 12% off or 5% cashback. Let's calculate standard 5% cashback configuration
+            const sbiCleartripMonthlyCashback = cleartripMonthly * 0.05;
+
+            // Partner limit (4% capped at ₹4k/quarter per category -> max ₹1,333/month)
+            const rawSbiPartnerMonthly = partnersMonthly * 0.04;
+            const sbiPartnerMonthlyCashback = Math.min(rawSbiPartnerMonthly, 1333.33);
+
+            const sbiOtherMonthlyCashback = othersMonthly * 0.01;
+
+            const totalMonthlySbiCashback = sbiFlipkartMonthlyCashback + sbiMyntraMonthlyCashback + sbiCleartripMonthlyCashback + sbiPartnerMonthlyCashback + sbiOtherMonthlyCashback;
+            const annualSbiGrossCashback = totalMonthlySbiCashback * 12;
+
+            // Fee Waiver SBI Check
+            const sbiFeeApplies = totalAnnualSpends < 350000;
+            const sbiFeeValue = sbiFeeApplies ? 590 : 0; // ₹500 + 18% GST = ₹590
+            const annualSbiNetVal = annualSbiGrossCashback - sbiFeeValue;
+
+            displays.sbiGross.innerText = `₹${Math.round(annualSbiGrossCashback).toLocaleString('en-IN')}`;
+            displays.sbiNet.innerText = `₹${Math.round(annualSbiNetVal).toLocaleString('en-IN')}`;
+            displays.sbiFee.innerHTML = sbiFeeApplies ? `<span class="text-rose-500 font-bold">₹590 Charged</span>` : `<span class="text-emerald-500 font-bold">Waived Off</span>`;
+
+            // CARD AXIS CALCULATION (As per late 2025/2026 revisions)
+            // Flipkart spends: 5% (capped at ₹4k/quarter = ₹1,333/month cap)
+            const rawAxisFlipkartMonthly = flipkartMonthly * 0.05;
+            const axisFlipkartMonthly = Math.min(rawAxisFlipkartMonthly, 1333.33);
+
+            // Myntra spends: 7.5% (capped at ₹4k/quarter = ₹1,333/month cap)
+            const rawAxisMyntraMonthly = myntraMonthly * 0.075;
+            const axisMyntraMonthly = Math.min(rawAxisMyntraMonthly, 1333.33);
+
+            // Cleartrip spends: 5% (capped at ₹4k/quarter = ₹1,333/month cap)
+            const rawAxisCleartripMonthly = cleartripMonthly * 0.05;
+            const axisCleartripMonthly = Math.min(rawAxisCleartripMonthly, 1333.33);
+
+            // Preferred Partners (Swiggy, Uber, PVR, Cult.fit): 4% (Unlimited)
+            const axisPartnerMonthly = partnersMonthly * 0.04;
+
+            // Other spends: 1.0% (Unlimited, downgraded from 1.5% in devaluation)
+            const axisOtherMonthly = othersMonthly * 0.01;
+
+            const totalMonthlyAxisCashback = axisFlipkartMonthly + axisMyntraMonthly + axisCleartripMonthly + axisPartnerMonthly + axisOtherMonthly;
+            const annualAxisGrossCashback = totalMonthlyAxisCashback * 12;
+
+            // Fee Waiver Axis Check (Excludes rent & wallet loads - we assume typical general spends configuration)
+            const axisFeeApplies = totalAnnualSpends < 350000;
+            const axisFeeValue = axisFeeApplies ? 590 : 0;
+            const annualAxisNetVal = annualAxisGrossCashback - axisFeeValue;
+
+            displays.axisGross.innerText = `₹${Math.round(annualAxisGrossCashback).toLocaleString('en-IN')}`;
+            displays.axisNet.innerText = `₹${Math.round(annualAxisNetVal).toLocaleString('en-IN')}`;
+            displays.axisFee.innerHTML = axisFeeApplies ? `<span class="text-rose-500 font-bold">₹590 Charged</span>` : `<span class="text-emerald-500 font-bold">Waived Off</span>`;
+
+            // Update Progress Bars (Relative comparison)
+            const maxVal = Math.max(annualSbiGrossCashback, annualAxisGrossCashback, 1000);
+            const sbiPct = (annualSbiGrossCashback / maxVal) * 100;
+            const axisPct = (annualAxisGrossCashback / maxVal) * 100;
+
+            displays.sbiBar.style.width = `${sbiPct}%`;
+            displays.axisBar.style.width = `${axisPct}%`;
+
+            // Dynamic Advisory updates based on outputs
+            if (Math.abs(annualAxisNetVal - annualSbiNetVal) < 100) {
+                displays.advise.innerText = "Both cards deliver neck-to-neck value. Choose based on food brand loyalty: Swiggy users should pick Axis, while Zomato loyalists should pick SBI.";
+            } else if (annualAxisNetVal > annualSbiNetVal) {
+                displays.advise.innerText = "The Flipkart Axis Credit Card wins here. This is primarily driven by unlimited partner payouts and robust lifestyle dining tiers despite quarterly platform caps.";
+            } else {
+                displays.advise.innerText = "The Flipkart SBI Credit Card yields superior returns. This layout matches your high quarterly limits or specific platform allocations.";
+            }
+        }
+
+        // Attach input listeners
+        Object.values(sliders).forEach(slider => {
+            slider.addEventListener('input', updateCalculations);
+        });
+
+        // Initialize calculations on load
+        window.addEventListener('DOMContentLoaded', () => {
+            updateCalculations();
+            loadQuiz();
+        });
+
+        // Dynamic Recommendation Wizard Engine
+        const quizQuestions = [
+            {
+                text: "Which online food delivery application do you prefer?",
+                options: [
+                    { label: "Swiggy", scoreSBI: 0, scoreAxis: 3 },
+                    { label: "Zomato", scoreSBI: 3, scoreAxis: 0 },
+                    { label: "I don't use either / Both equally", scoreSBI: 1, scoreAxis: 1 }
+                ]
+            },
+            {
+                text: "Do you plan to spend heavily during big annual sales (BBD / Diwalis)?",
+                options: [
+                    { label: "Yes, I make very large seasonal purchases", scoreSBI: 2, scoreAxis: 0, reason: "SBI gets direct bank discount offers which can often stack on top of co-branded capabilities." },
+                    { label: "No, my shopping is evenly distributed throughout the year", scoreSBI: 1, scoreAxis: 2 }
+                ]
+            },
+            {
+                text: "What is your stance on fitness (Cult.fit) or health pharmacy (Netmeds) spends?",
+                options: [
+                    { label: "Cult.fit (Gyms/Workouts) matters more to me", scoreSBI: 0, scoreAxis: 2 },
+                    { label: "Netmeds (Online pharmacy) is where I spend", scoreSBI: 2, scoreAxis: 0 },
+                    { label: "Neither matters much", scoreSBI: 0, scoreAxis: 0 }
+                ]
+            }
+        ];
+
+        let currentQuestionIdx = 0;
+        let sbiScore = 0;
+        let axisScore = 0;
+        let selectedNotes = [];
+
+        function loadQuiz() {
+            const container = document.getElementById('quizStep');
+            if (currentQuestionIdx < quizQuestions.length) {
+                const question = quizQuestions[currentQuestionIdx];
+                let optionsHtml = '';
+                
+                question.options.forEach((opt, idx) => {
+                    optionsHtml += `
+                        <button onclick="answerQuestion(${idx})" class="w-full text-left p-4 rounded-xl bg-slate-800/40 hover:bg-white/10 border border-slate-700 hover:border-slate-500 transition-all text-sm font-medium">
+                            <span class="inline-block w-6 h-6 rounded-full bg-slate-700 text-center leading-6 text-xs font-bold mr-3">${String.fromCharCode(65 + idx)}</span>
+                            ${opt.label}
+                        </button>
+                    `;
+                });
+
+                container.innerHTML = `
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-brandBlue">Step ${currentQuestionIdx + 1} of ${quizQuestions.length}</span>
+                        <h3 class="text-lg font-bold text-white">${question.text}</h3>
+                    </div>
+                    <div class="space-y-3 mt-4">
+                        ${optionsHtml}
+                    </div>
+                `;
+            } else {
+                renderQuizResults();
+            }
+        }
+
+        function answerQuestion(optionIdx) {
+            const question = quizQuestions[currentQuestionIdx];
+            const choice = question.options[optionIdx];
+            
+            sbiScore += choice.scoreSBI;
+            axisScore += choice.scoreAxis;
+            
+            if (choice.reason) {
+                selectedNotes.push(choice.reason);
+            }
+
+            currentQuestionIdx++;
+            loadQuiz();
+        }
+
+        function renderQuizResults() {
+            const container = document.getElementById('quizStep');
+            let winnerTitle = '';
+            let winnerCard = '';
+            let winnerColor = '';
+            let details = '';
+
+            if (sbiScore > axisScore) {
+                winnerTitle = "Flipkart SBI Credit Card";
+                winnerCard = "sbi";
+                winnerColor = "text-sky-400";
+                details = "Your preference for Zomato delivery, health platforms (Netmeds), and merchant banking integration configures the SBI option as your optimal companion.";
+            } else if (axisScore > sbiScore) {
+                winnerTitle = "Flipkart Axis Bank Credit Card";
+                winnerCard = "axis";
+                winnerColor = "text-rose-400";
+                details = "Your lifestyle affinity for Swiggy, Cult.fit ecosystems, and uncapped partner transaction multipliers frames Axis as your high-value match.";
+            } else {
+                winnerTitle = "It's a Tie!";
+                winnerColor = "text-yellow-400";
+                details = "Both cards represent high structural parity for your profile. We suggest picking the card linked with whichever bank you hold an existing savings account with to ease KYC validation!";
+            }
+
+            let adviceList = '';
+            selectedNotes.forEach(note => {
+                adviceList += `<li class="text-xs text-slate-300 flex items-start"><i class="fas fa-info-circle text-yellow-400 mr-2 mt-0.5"></i> ${note}</li>`;
+            });
+
+            container.innerHTML = `
+                <div class="text-center space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Analysis Complete</span>
+                    <h3 class="text-2xl font-black ${winnerColor}">Recommended: ${winnerTitle}</h3>
+                    <p class="text-sm text-slate-300 max-w-md mx-auto">${details}</p>
+                    
+                    ${adviceList ? `
+                        <div class="bg-slate-900/40 border border-slate-800 p-4 rounded-xl text-left mt-4 max-w-md mx-auto">
+                            <h4 class="text-xs font-bold uppercase text-slate-400 mb-2">Key Factor Insights:</h4>
+                            <ul class="space-y-2">${adviceList}</ul>
+                        </div>
+                    ` : ''}
+
+                    <div class="pt-4">
+                        <button onclick="resetQuiz()" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs rounded-xl border border-slate-700 transition">
+                            <i class="fas fa-redo mr-1"></i> Retake Wizard
+                        </button>
+                    </div>
+                </div>
+                
+            `;
+        }
+
+        function resetQuiz() {
+            currentQuestionIdx = 0;
+            sbiScore = 0;
+            axisScore = 0;
+            selectedNotes = [];
+            loadQuiz();
+        }
+    </script>
+</body>
+</html>
