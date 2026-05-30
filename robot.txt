@@ -1,0 +1,8 @@
+Plaintext
+# https://palankarmanohar-png.github.io/Rightchoice/robots.txt
+User-agent: *
+Allow: /Rightchoice/
+Allow: /Rightchoice/index.html
+
+# Point to your sitemap
+Sitemap: https://palankarmanohar-png.github.io/Rightchoice/sitemap.xml
